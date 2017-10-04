@@ -1,0 +1,23 @@
+<html>
+     
+   <body>
+       
+      <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<script src="cnv.js"></script>
+
+
+
+<div ng-app="myApp" ng-controller="myCtrl">
+Amount (MaxLength 9): <input type="text" ng-model="amount" maxlength=9><br> <input type="radio" ng-model="myInt" value="euro"/>Euro
+<input type="radio" ng-model="myInt" value="dollar" />Dollar
+<button ng-click="convert()">Convert</button>
+
+<br>
+Notes:
+<p>separators included like (,)</p>
+<p>supports internationalization; Europe swaps separator and decimal symbol.</p>
+<p>Only two decimal places has been considered.</p>
+
+</div>
+   </body>
+</html>
