@@ -28,7 +28,6 @@ alert("Enter amount or conversion");
 	if(isNaN(myNum)){
 		alert("Not a munber");
 	}else{
-		alert($scope.amt);
 		var curr ='';
 		var tempArr='';
 		var number ='';
@@ -41,10 +40,10 @@ alert("Enter amount or conversion");
 		  myNum = myNum.replace("#",",");
 		 tempArr = myNum.split(".");
 		  number = tempArr[0].split(",").join("");
-		  alert(number);
+		  
 		  
 		  decimal = tempArr[1];
-		  alert(decimal);
+		  
 		}else{
 		curr=' dollar';
 		tempArr = amount.split(".");
